@@ -1,17 +1,22 @@
-# QA Portfolio – Benjamin Purvis
+# QA Portfolio - Ben Purvis
 
-This repository contains my hands-on QA practice work, including test plans, bug reports, test results, and basic automation experiments.
+Hands-on QA testing practice for healthcare software roles. Demonstrates test planning, execution, bug reporting, and basic automation skills.
 
 ## Contents
 
-- `test-plans/` – Test plans and test cases (starting with a patient portal scenario)
-- `bug-reports/` – Bug report templates and real issues found during testing
-- `test-results/` – Execution logs and test result summaries
-- `automation/` – Introductory automation experiments (to be added)
+- **[Test Plans](test-plans/patient-portal.md)** - Patient portal test cases (5 core scenarios)
+- **[Test Results](test-results/patient-portal-smoke-test.md)** - Smoke test execution log
+- `bug-reports/` - Real defects found (coming soon)  
+- `automation/` - Test scripts (Week 2)
 
-## Current Focus
+## Current Progress
 
-- Web app testing (patient portal / scheduling flows)
-- Mobile app testing (via TestFlight / Play Store, coming soon)
-- Learning Jira for issue tracking and sprint-style workflows
-- Building basic test automation skills
+**Week 1 Complete:**
+- Professional test plan with numbered test cases (TC-001 → TC-005)
+- Test execution tracking table ready
+- GitHub workflow established
+
+**Next:** Execute tests on real patient portal → Document Pass/Fail → Write bug reports
+
+---
+*Healthcare professional (10+ yrs lab/complex care) learning QA engineering*
