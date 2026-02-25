@@ -1,30 +1,35 @@
 # Patient Portal Test Plan
 
-App: [App name or URL]  
-Date: [Today’s date]  
-Environment: Chrome (desktop), [your OS]
+**App:** Zocdoc.com 
+**Tester:** Ben P  
+**Date:** February 25, 2026  
+**Environment:** Chrome 122, Windows 11
 
-## Scope
-Basic smoke tests for login, account, and appointment booking flows.
+## Test Objective
+Verify core patient portal functionality: login, appointment booking, profile management.
 
 ## Test Cases
 
-1. **Login – valid credentials**
-   - Steps: Go to login page, enter valid email/password, click Login.
-   - Expected: User is taken to dashboard.
+**TC-001: Login - Valid Credentials**
+- Navigate to login page
+- Enter valid email/password  
+- Click "Login"
+- **Expected:** Redirect to dashboard
 
-2. **Login – invalid password**
-   - Steps: Enter valid email, wrong password, click Login.
-   - Expected: Error message shown, user stays on login page.
+**TC-002: Login - Invalid Password**
+- Enter valid email, incorrect password
+- Click "Login"  
+- **Expected:** Error message, remain on login page
 
-3. **Appointment booking – all fields valid**
-   - Steps: Navigate to Appointments, select date/time, provider, confirm.
-   - Expected: Confirmation message and appointment appears in list.
+**TC-003: Book Appointment - Complete Flow**
+- Login → Appointments → Select provider → Date → Time → Confirm
+- **Expected:** Confirmation page, appointment in list
 
-4. **Appointment booking – missing required field**
-   - Steps: Leave time or provider blank, try to confirm.
-   - Expected: Validation error, appointment not created.
+**TC-004: Book Appointment - Missing Required Field**
+- Skip provider selection → Attempt confirm
+- **Expected:** Validation error, appointment not created
 
-5. **Profile update – valid data**
-   - Steps: Go to profile, change phone number, save.
-   - Expected: Success message, new value persists on refresh.
+**TC-005: Profile Update - Phone Number**
+- Profile → Edit phone → Save
+- Refresh page
+- **Expected:** New phone number displays
